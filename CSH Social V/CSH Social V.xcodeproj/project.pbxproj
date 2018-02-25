@@ -15,8 +15,8 @@
 		9F5B7BA82042989300F0693C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F5B7BA62042989300F0693C /* LaunchScreen.storyboard */; };
 		9F5B7BB32042989300F0693C /* CSH_Social_VTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5B7BB22042989300F0693C /* CSH_Social_VTests.swift */; };
 		9F5B7BBE2042989300F0693C /* CSH_Social_VUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5B7BBD2042989300F0693C /* CSH_Social_VUITests.swift */; };
-		9F9B27CE204334FB0036FB07 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9B27CD204334FB0036FB07 /* Event.swift */; };
-		9F9B27D0204335550036FB07 /* EventDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9B27CF204335550036FB07 /* EventDataSource.swift */; };
+		9F9B27D4204337B60036FB07 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9B27D3204337B60036FB07 /* Event.swift */; };
+		9F9B27D6204337C30036FB07 /* EventDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9B27D5204337C30036FB07 /* EventDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +51,8 @@
 		9F5B7BB92042989300F0693C /* CSH Social VUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CSH Social VUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F5B7BBD2042989300F0693C /* CSH_Social_VUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSH_Social_VUITests.swift; sourceTree = "<group>"; };
 		9F5B7BBF2042989300F0693C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9F9B27CD204334FB0036FB07 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Event.swift; path = "../../CSH Social III/CSH Social III/Event.swift"; sourceTree = "<group>"; };
-		9F9B27CF204335550036FB07 /* EventDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventDataSource.swift; path = "../../CSH Social III/CSH Social III/EventDataSource.swift"; sourceTree = "<group>"; };
+		9F9B27D3204337B60036FB07 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		9F9B27D5204337C30036FB07 /* EventDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,9 +104,9 @@
 			isa = PBXGroup;
 			children = (
 				9F5B7B9B2042989300F0693C /* AppDelegate.swift */,
-				9F9B27CD204334FB0036FB07 /* Event.swift */,
-				9F9B27CF204335550036FB07 /* EventDataSource.swift */,
 				9F5B7B9D2042989300F0693C /* FirstViewController.swift */,
+				9F9B27D5204337C30036FB07 /* EventDataSource.swift */,
+				9F9B27D3204337B60036FB07 /* Event.swift */,
 				9F5B7B9F2042989300F0693C /* SecondViewController.swift */,
 				9F5B7BA12042989300F0693C /* Main.storyboard */,
 				9F5B7BA42042989300F0693C /* Assets.xcassets */,
@@ -268,10 +268,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F9B27D4204337B60036FB07 /* Event.swift in Sources */,
+				9F9B27D6204337C30036FB07 /* EventDataSource.swift in Sources */,
 				9F5B7BA02042989300F0693C /* SecondViewController.swift in Sources */,
 				9F5B7B9C2042989300F0693C /* AppDelegate.swift in Sources */,
-				9F9B27D0204335550036FB07 /* EventDataSource.swift in Sources */,
-				9F9B27CE204334FB0036FB07 /* Event.swift in Sources */,
 				9F5B7B9E2042989300F0693C /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
