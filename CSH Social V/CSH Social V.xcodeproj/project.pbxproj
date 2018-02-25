@@ -53,6 +53,7 @@
 		9F5B7BBF2042989300F0693C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F9B27D3204337B60036FB07 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		9F9B27D5204337C30036FB07 /* EventDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDataSource.swift; sourceTree = "<group>"; };
+		9F9B282520434D920036FB07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file; name = Base; path = Base.lproj/BebasNeue.otf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +113,7 @@
 				9F5B7BA42042989300F0693C /* Assets.xcassets */,
 				9F5B7BA62042989300F0693C /* LaunchScreen.storyboard */,
 				9F5B7BA92042989300F0693C /* Info.plist */,
+				9F9B27D720433AA50036FB07 /* Resources */,
 			);
 			path = "CSH Social V";
 			sourceTree = "<group>";
@@ -132,6 +134,14 @@
 				9F5B7BBF2042989300F0693C /* Info.plist */,
 			);
 			path = "CSH Social VUITests";
+			sourceTree = "<group>";
+		};
+		9F9B27D720433AA50036FB07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9F9B282620434D920036FB07 /* BebasNeue.otf */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -322,6 +332,15 @@
 				9F5B7BA72042989300F0693C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		9F9B282620434D920036FB07 /* BebasNeue.otf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F9B282520434D920036FB07 /* Base */,
+			);
+			name = BebasNeue.otf;
+			path = ../../../../../Desktop/FontName/FontName;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
