@@ -13,10 +13,10 @@ struct EventDataSource{
     
     init() {
         events = []
-        let evnt1 = Event(title: "Tea in the Lounge", time: "Tuesday: 4PM - 6PM", location: "Lounge", rsvp: "Maybe")
+        let evnt1 = Event(title: "Tea in the Lounge")
         events.append(evnt1)
         
-        let evnt2 = Event(title: "American Vandal", time: "Wednesday: 9PM - 11PM", location: "Lounge", rsvp: "Going")
+        let evnt2 = Event(title: "American Vandal")
         events.append(evnt2)
         
     }

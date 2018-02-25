@@ -8,17 +8,11 @@
 
 import Foundation
 
-class Event {
+struct Event {
     var title: String!
-    var time: String!
-    var location: String!
-    var rsvp: String!
     
-    init(title: String, time: String, location: String, rsvp: String){
+    init(title: String) {
         self.title = title
-        self.time = time
-        self.location = location
-        self.rsvp = rsvp
     }
     
 }
