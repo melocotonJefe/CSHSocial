@@ -28,8 +28,16 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell:UITableViewCell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "Cell")
+        let cell:UITableViewCell = UITableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: "Cell")
+        
+        _ = UIFont.preferredFont(forTextStyle: UIFontTextStyle.headline)
+        let font = UIFont(name: "BebasNeue", size: 24)
+        let detailfont = UIFont(name: "BebasNeue", size: 16)
+        cell.textLabel?.font = font
+        cell.detailTextLabel?.font = detailfont
+        
         cell.textLabel?.text = events[indexPath.row].title
+        cell.detailTextLabel?.text = events[indexPath.row].date
         
         return cell
     }

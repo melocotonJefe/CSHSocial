@@ -46,6 +46,7 @@
 	</array>
 	<key>UIAppFonts</key>
 	<array>
+		<string>LobsterTwo-Regular.ttf</string>
 		<string>BebasNeue.otf</string>
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
