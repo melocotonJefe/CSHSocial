@@ -1,16 +1,14 @@
 //
-//  FirstViewController.swift
-//  CSH Social III
+//  SecondViewController.swift
+//  CSH Social V
 //
-//  Created by Tino Martino on 2/18/18.
-//  Copyright © 2018 Computer Science House. All rights reserved.
+//  Created by Jeff Phillips on 2/25/18.
+//  Copyright © 2018 Jeff Phillips. All rights reserved.
 //
 
 import UIKit
 
-
-
-class FirstViewController: UIViewController {
+class SecondViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

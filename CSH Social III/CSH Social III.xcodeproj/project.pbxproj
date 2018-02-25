@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F5B7B4C2042754200F0693C /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5B7B4B2042754200F0693C /* EventCell.swift */; };
 		9F926D4120410B3F0018A11D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F926D4020410B3F0018A11D /* Assets.xcassets */; };
+		9FB8A5F5204238EC0061728B /* EventDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB8A5F4204238EC0061728B /* EventDataSource.swift */; };
+		9FB8A631204248970061728B /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB8A630204248970061728B /* Event.swift */; };
 		9FBFD2E2203A456000357DF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBFD2E1203A456000357DF3 /* AppDelegate.swift */; };
 		9FBFD2E4203A456000357DF3 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBFD2E3203A456000357DF3 /* FirstViewController.swift */; };
 		9FBFD2E6203A456000357DF3 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBFD2E5203A456000357DF3 /* SecondViewController.swift */; };
@@ -35,7 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9F5B7B4B2042754200F0693C /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
 		9F926D4020410B3F0018A11D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9FB8A5F4204238EC0061728B /* EventDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDataSource.swift; sourceTree = "<group>"; };
+		9FB8A630204248970061728B /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		9FBFD2DE203A456000357DF3 /* CSH Social III.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CSH Social III.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FBFD2E1203A456000357DF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FBFD2E3203A456000357DF3 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +106,9 @@
 			isa = PBXGroup;
 			children = (
 				9FBFD2E1203A456000357DF3 /* AppDelegate.swift */,
+				9F5B7B4B2042754200F0693C /* EventCell.swift */,
+				9FB8A630204248970061728B /* Event.swift */,
+				9FB8A5F4204238EC0061728B /* EventDataSource.swift */,
 				9FBFD2E3203A456000357DF3 /* FirstViewController.swift */,
 				9FBFD2E5203A456000357DF3 /* SecondViewController.swift */,
 				9FBFD2E7203A456000357DF3 /* Main.storyboard */,
@@ -263,8 +272,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FBFD2E6203A456000357DF3 /* SecondViewController.swift in Sources */,
+				9FB8A5F5204238EC0061728B /* EventDataSource.swift in Sources */,
 				9FBFD2E2203A456000357DF3 /* AppDelegate.swift in Sources */,
 				9FBFD2E4203A456000357DF3 /* FirstViewController.swift in Sources */,
+				9FB8A631204248970061728B /* Event.swift in Sources */,
+				9F5B7B4C2042754200F0693C /* EventCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
