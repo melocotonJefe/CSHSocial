@@ -16,6 +16,8 @@ struct Event {
         self.title = title
         self.date = date
     }
+    //array of strings for random events
+    var randomEvents: [String]=[]
     
     /// Returns true if given string matches the title of the Event. 
     func matchesSearchText(_ text: String) -> Bool {
