@@ -17,4 +17,12 @@ struct Event {
         self.date = date
     }
     
+    /// Returns true if given string matches the title of the Event. 
+    func matchesSearchText(_ text: String) -> Bool {
+        if title.lowercased().contains(text) {
+            return true
+        }
+        return false
+    }
+    
 }

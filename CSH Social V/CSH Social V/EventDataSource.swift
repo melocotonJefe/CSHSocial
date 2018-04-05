@@ -19,6 +19,7 @@ struct EventDataSource{
         let evnt2 = Event(title: "American Vandal", date: "Wednesday: 9PM - 11PM")
         events.append(evnt2)
         
+        
     }
     func getEvents() -> [Event]{
         return events

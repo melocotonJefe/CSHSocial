@@ -17,7 +17,6 @@
 		9F5B7BBE2042989300F0693C /* CSH_Social_VUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5B7BBD2042989300F0693C /* CSH_Social_VUITests.swift */; };
 		9F9B27D4204337B60036FB07 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9B27D3204337B60036FB07 /* Event.swift */; };
 		9F9B27D6204337C30036FB07 /* EventDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9B27D5204337C30036FB07 /* EventDataSource.swift */; };
-		9F9B28282043566E0036FB07 /* LobsterTwo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9F9B28272043566E0036FB07 /* LobsterTwo-Regular.ttf */; };
 		9F9B2829204356DA0036FB07 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9F5B7BA92042989300F0693C /* Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -56,7 +55,6 @@
 		9F9B27D3204337B60036FB07 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		9F9B27D5204337C30036FB07 /* EventDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDataSource.swift; sourceTree = "<group>"; };
 		9F9B282520434D920036FB07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file; name = Base; path = Base.lproj/BebasNeue.otf; sourceTree = "<group>"; };
-		9F9B28272043566E0036FB07 /* LobsterTwo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "LobsterTwo-Regular.ttf"; path = "../../../../../Downloads/Lobster_Two/LobsterTwo-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,7 +140,6 @@
 		9F9B27D720433AA50036FB07 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				9F9B28272043566E0036FB07 /* LobsterTwo-Regular.ttf */,
 				9F9B282620434D920036FB07 /* BebasNeue.otf */,
 			);
 			path = Resources;
@@ -257,7 +254,6 @@
 			files = (
 				9F5B7BA82042989300F0693C /* LaunchScreen.storyboard in Resources */,
 				9F5B7BA52042989300F0693C /* Assets.xcassets in Resources */,
-				9F9B28282043566E0036FB07 /* LobsterTwo-Regular.ttf in Resources */,
 				9F9B2829204356DA0036FB07 /* Info.plist in Resources */,
 				9F5B7BA32042989300F0693C /* Main.storyboard in Resources */,
 			);

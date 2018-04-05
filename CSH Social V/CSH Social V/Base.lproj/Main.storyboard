@@ -11,6 +11,26 @@
     </dependencies>
     <scenes>
         <!--First-->
+        <scene sceneID="DKG-SC-Yz0">
+            <objects>
+                <navigationController id="gh0-fr-Uqf" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="First" image="first" id="cOq-M8-S1O"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="B9Z-rN-Fox">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="26"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="rootViewController" id="FKY-u8-r6X"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uja-ho-yHd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-84" y="-325"/>
+        </scene>
+        <!--HOME-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="CSH_Social_V" customModuleProvider="target" sceneMemberID="viewController">
@@ -33,53 +53,33 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="veX-pH-MW1">
-                                <rect key="frame" x="0.0" y="155" width="375" height="463"/>
+                            <tableView contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TKv-XN-ei9">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="9pv-A4-QxB" id="mzD-2h-aNJ"/>
+                                    <outlet property="delegate" destination="9pv-A4-QxB" id="gpQ-V4-5fc"/>
+                                </connections>
                             </tableView>
-                            <searchBar contentMode="redraw" placeholder="Search Events" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zma-Ja-T6K">
-                                <rect key="frame" x="0.0" y="100" width="375" height="56"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="56" id="Rqi-8o-k8A"/>
-                                </constraints>
-                                <color key="barTintColor" red="0.69019607839999997" green="0.098039215690000001" blue="0.4941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="Rqi-8o-k8A"/>
-                                    </mask>
-                                </variation>
-                            </searchBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qZi-1x-X3j">
-                                <rect key="frame" x="16" y="30" width="87" height="60"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="BebasNeue" family="Bebas Neue" pointSize="50"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.69019607843137254" green="0.098039215686274508" blue="0.49411764705882355" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="zma-Ja-T6K" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="H04-yL-rDg"/>
-                            <constraint firstItem="zma-Ja-T6K" firstAttribute="trailing" secondItem="PQr-Ze-W5v" secondAttribute="trailing" id="H1y-aD-ezs"/>
-                            <constraint firstItem="veX-pH-MW1" firstAttribute="bottom" secondItem="PQr-Ze-W5v" secondAttribute="bottom" id="HAM-Qx-adR"/>
-                            <constraint firstItem="veX-pH-MW1" firstAttribute="top" secondItem="qZi-1x-X3j" secondAttribute="bottom" constant="65" id="TCZ-CX-WhJ"/>
-                            <constraint firstItem="veX-pH-MW1" firstAttribute="trailing" secondItem="PQr-Ze-W5v" secondAttribute="trailing" id="dVw-xH-H3c"/>
-                            <constraint firstItem="qZi-1x-X3j" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="10" id="int-0a-DdO"/>
-                            <constraint firstItem="veX-pH-MW1" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="lga-Fw-TMv"/>
-                            <constraint firstItem="qZi-1x-X3j" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="16" id="sve-mU-ul4"/>
-                            <constraint firstItem="zma-Ja-T6K" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" constant="100" id="yop-XM-wHk"/>
+                            <constraint firstItem="TKv-XN-ei9" firstAttribute="bottom" secondItem="PQr-Ze-W5v" secondAttribute="bottom" id="Ap5-iF-8DK"/>
+                            <constraint firstItem="TKv-XN-ei9" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="GXg-BF-y7q"/>
+                            <constraint firstItem="TKv-XN-ei9" firstAttribute="trailing" secondItem="PQr-Ze-W5v" secondAttribute="trailing" id="MQ8-HO-1nR"/>
+                            <constraint firstItem="TKv-XN-ei9" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" id="ZZe-A1-U3e"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <navigationItem key="navigationItem" title="HOME" id="iVp-ZP-2Yl"/>
                     <connections>
-                        <outlet property="tableView" destination="veX-pH-MW1" id="dYy-Ud-rrR"/>
+                        <outlet property="tableView" destination="TKv-XN-ei9" id="NfO-5F-lXr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="749.60000000000002" y="-320.68965517241384"/>
+            <point key="canvasLocation" x="749.60000000000002" y="-325.18740629685158"/>
         </scene>
         <!--Second-->
         <scene sceneID="wg7-f3-ORb">
@@ -122,6 +122,7 @@
         <scene sceneID="yl2-sM-qoP">
             <objects>
                 <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ihH-ui-ZVs"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -131,13 +132,13 @@
                         <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="gh0-fr-Uqf" kind="relationship" relationship="viewControllers" id="c9z-Nj-coB"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="0.0" y="0.0"/>
+            <point key="canvasLocation" x="-1047" y="-98"/>
         </scene>
     </scenes>
     <resources>
