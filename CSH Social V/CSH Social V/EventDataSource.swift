@@ -8,20 +8,16 @@
 
 import Foundation
 
-struct EventDataSource{
-    var events:[Event]
+class EventDataSource{
     
-    init() {
-        events = []
-        let evnt1 = Event(title: "Tea in the Lounge", date: "Tuesday: 4PM - 6PM")
-        events.append(evnt1)
-        
-        let evnt2 = Event(title: "American Vandal", date: "Wednesday: 9PM - 11PM")
-        events.append(evnt2)
-        
-        
-    }
-    func getEvents() -> [Event]{
+    private static var events:[Event] = []
+    
+    static func getEvents() -> [Event]{
         return events
     }
+    
+    static func createEvent(event: Event) {
+        events.append(event)
+    }
+    
 }

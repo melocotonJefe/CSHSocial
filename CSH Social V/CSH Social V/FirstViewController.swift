@@ -12,19 +12,18 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     @IBOutlet weak var tableView: UITableView!
     
-    let manager = EventDataSource()
-    var events = [Event]()
     var filteredEvents = [Event]()
     let searchController = UISearchController(searchResultsController: nil)
+    
+    override func viewDidAppear(_ animated: Bool) {
+        self.tableView.reloadData()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         viewSetup()
-        
-        
-        self.events = manager.getEvents()
-        
+        searchBarSetup()
        
     }
     
@@ -38,8 +37,6 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.navigationItem.largeTitleDisplayMode = .automatic
         navigationController?.navigationBar.largeTitleTextAttributes = [ NSAttributedStringKey.font: UIFont(name: "BebasNeue", size: 50)!]
-        
-        searchBarSetup()
         
     }
     
@@ -61,8 +58,6 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
         definesPresentationContext = true
         
     }
-    
-    
 
     func searchBarIsEmpty() -> Bool {
         return searchController.searchBar.text?.isEmpty ?? true
@@ -78,7 +73,7 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
         if isSearching() {
             return self.filteredEvents.count
         }
-        return self.events.count
+        return EventDataSource.getEvents().count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -94,11 +89,11 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
         
         if isSearching() {
             cell.textLabel?.text = filteredEvents[indexPath.row].title
-            cell.detailTextLabel?.text = events[indexPath.row].date
+            cell.detailTextLabel?.text = EventDataSource.getEvents()[indexPath.row].date
         }
         else {
-            cell.textLabel?.text = events[indexPath.row].title
-            cell.detailTextLabel?.text = events[indexPath.row].date
+            cell.textLabel?.text = EventDataSource.getEvents()[indexPath.row].title
+            cell.detailTextLabel?.text = EventDataSource.getEvents()[indexPath.row].date
         }
         
         return cell
@@ -114,7 +109,7 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
 extension FirstViewController: UISearchResultsUpdating {
     /// Updates the search results each time text is entered.
     func updateSearchResults(for searchController: UISearchController) {
-        filteredEvents = events.filter { $0.matchesSearchText((searchController.searchBar.text?.lowercased())!) }
+        filteredEvents = EventDataSource.getEvents().filter { $0.matchesSearchText((searchController.searchBar.text?.lowercased())!) }
         self.tableView.reloadData()
     }
 }

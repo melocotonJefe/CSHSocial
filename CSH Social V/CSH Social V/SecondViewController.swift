@@ -20,31 +20,21 @@ class SecondViewController: UIViewController, UITextFieldDelegate{
         // Dispose of any resources that can be recreated.
     }
     
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        print("textFieldShouldReturn")
-        textfield.resignFirstResponder()
-        return true
+    @IBOutlet weak var eventNameField: UITextField!
+    @IBOutlet weak var timeField: UITextField!
+    @IBOutlet weak var locationField: UITextField!
+    @IBOutlet weak var aboutField: UITextField!
+    
+    @IBAction func Submit(_ sender: UIButton) {
+        let event = Event(title:eventNameField.text!,date:timeField.text!,location:locationField.text!,about:aboutField.text!)
+        EventDataSource.createEvent(event: event)
+        
+        //clear the text fields on submit
+        eventNameField.text!=""
+        timeField.text!=""
+        locationField.text!=""
+        aboutField.text!=""
     }
     
-    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
-        textField.backgroundColor=UIColor.lightGrayColor()
-        return true
-    }
-    
-    func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
-        textField.backgroundColor=UIColor.whiteColor()
-        return true
-    }
-    
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        print("textFieldDidEndEditing")
-    }
-    
-    func textField(textField:UITextField,shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool{
-    print(string)
-    return true
-    }
-    
-
 }
 
