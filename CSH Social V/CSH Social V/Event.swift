@@ -17,6 +17,8 @@ struct Event {
     init(title: String, date: String,location:String,about:String) {
         self.title = title
         self.date = date
+        self.location=location
+        self.about=about
     }
     
     /// Returns true if given string matches the title of the Event. 
